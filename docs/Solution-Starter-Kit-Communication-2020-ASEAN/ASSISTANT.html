@@ -1,0 +1,502 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>a) Create a crisis communication chatbot and connect it to news and data sources · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="starter-kit/node-red/Node-RED-chatbot.html" />
+    
+    
+    <link rel="prev" href="../Workshop_Watsion_Studio/Welcome.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">SCDF INNOVATION CHALLENGE WITH IBM CALL FOR CODE</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../Workshop_Watsion_Studio/Welcome.html">
+            
+                <a href="../Workshop_Watsion_Studio/Welcome.html">
+            
+                    
+                    Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">IBM Watson Assistant</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="ASSISTANT.html">
+            
+                <a href="ASSISTANT.html">
+            
+                    
+                    a) Create a crisis communication chatbot and connect it to news and data sources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="starter-kit/node-red/Node-RED-chatbot.html">
+            
+                <a href="starter-kit/node-red/Node-RED-chatbot.html">
+            
+                    
+                    b) Create a voice-enabled COVID-19 chatbot using Node-RED
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">IBM Watson Studio</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../Workshop_Watsion_Studio/Introduction.html">
+            
+                <a href="../Workshop_Watsion_Studio/Introduction.html">
+            
+                    
+                    Introduction to Data Science
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../Workshop_Watsion_Studio/Data_Preparation_using_Data_Refinery.html">
+            
+                <a href="../Workshop_Watsion_Studio/Data_Preparation_using_Data_Refinery.html">
+            
+                    
+                    Data Preparation using Data Refinery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../Workshop_Watsion_Studio/AutoAI.html">
+            
+                <a href="../Workshop_Watsion_Studio/AutoAI.html">
+            
+                    
+                    Auto AI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">IBM Developer - ASEAN</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Team
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >a) Create a crisis communication chatbot and connect it to news and data sources</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-1-create-a-crisis-communication-chatbot-and-connect-it-to-news-and-covid-19-data-sources">CHAPTER 1: Create a crisis communication chatbot and connect it to news and COVID-19 data sources</h1>
+<p>In times of crisis, chatbots can help people quickly find answers they need to critical questions. In the case of a pandemic like COVID-19, people might be trying to find basic information about testing, symptoms, community response, and other resources.</p>
+<p>This tutorial shows you how to create a crisis communication chatbot using IBM&#xAE; Watson&#x2122; Assistant and how to add webhooks to Watson Assistant to query for dynamic data using Watson Discovery and COVID-19 APIs.</p>
+<h2 id="learning-objectives">Learning objectives</h2>
+<p>In this tutorial, you will:</p>
+<ul>
+<li>Provision an instance of Watson Assistant</li>
+<li>Add a dialog skill to your Watson Assistant instance</li>
+<li>Connect your Watson Assistant with Watson Discovery</li>
+<li>Create Cloud Functions</li>
+<li>Integrate data sources via a Watson Assistant webhook</li>
+</ul>
+<h2 id="prerequisite">Prerequisite</h2>
+<ul>
+<li>Register for an <a href="https://ibm.biz/BdqfRf" target="_blank">IBM Cloud</a> account</li>
+<li>Download the code from this GitHub <a href="https://github.com/IraAngeles-IBM/Solution-Starter-Kit-Communication-2020-ASEAN" target="_blank">repository</a></li>
+</ul>
+<h2 id="estimated-time">Estimated time</h2>
+<p>This tutorial takes about 40 minutes to complete.</p>
+<h1 id="create-your-chatbot-by-setting-up-a-watson-assistant-instance">Create your chatbot by setting up a Watson Assistant instance</h1>
+<p>We show you how to create a chatbot using Watson Assistant, a tool that enables you to build conversational interfaces into any application, device, or channel.</p>
+<p><strong>Step 1.</strong> From the <a href="https://cloud.ibm.com/catalog/services/watson-assistant" target="_blank">IBM Cloud catalog</a>, provision an an instance of <strong>Watson Assistant</strong>.</p>
+<p>  <img src="starter-kit/assistant/WA-Photo1.png" alt="Watson Assistant Catalog"></p>
+<p><strong>Step 2.</strong>  Launch the Watson Assistant service.</p>
+<p><strong>Step 3.</strong> Click <strong>Create assistant</strong> and follow <a href="https://cloud.ibm.com/docs/assistant?topic=assistant-assistant-add" target="_blank">these detailed instructions</a> for how to create an assistant.</p>
+<p>  <img src="starter-kit/assistant/WA-Photo2.png" alt="Watson Assistant Photo2 "></p>
+<p><strong>Step 4.</strong> Name the Watson Assistant instance <strong>COVID Crisis Communication</strong></p>
+<p>  <img src="starter-kit/assistant/WA-Photo3.png" alt="Watson Assistant Photo3 "></p>
+<p><strong>Step 5.</strong> Click <strong>Add Dialog skill</strong> to add this to your assistant. Follow <a href="https://cloud.ibm.com/docs/assistant?topic=assistant-skill-dialog-add" target="_blank">the documentation</a> if you have questions.</p>
+<p>  <img src="starter-kit/assistant/WA-Photo4.png" alt="Watson Assistant Photo4 "></p>
+<p><strong>Step 6.</strong> Click <strong>Import skill &gt; Choose JSON file</strong> and import the <a href="https://raw.githubusercontent.com/IraAngeles-IBM/Solution-Starter-Kit-Communication-2020-ASEAN/master/starter-kit/assistant/skill-CDC-COVID-FAQ.json" target="_blank"><code>skill-CDC-COVID-FAQ.json</code></a> file.</p>
+<p>  <img src="starter-kit/assistant/WA-Photo5.png" alt="Watson Assistant Photo5 "></p>
+<p><strong>Step 7.</strong> Go back to the All Assistants page. From the action menu ( <strong><code>&#x22EE;</code></strong> ), open <strong>Settings</strong>.</p>
+<p>  <img src="starter-kit/assistant/WA-Photo6.png" alt="Watson Assistant Photo6 "></p>
+<p><strong>Step 8.</strong>  On the Settings tab, click <strong>API Details</strong> on the left and make a note of the <code>Assistant ID</code> and <code>Api Key</code> for future use.</p>
+<p>  <img src="starter-kit/assistant/WA-Photo7.png" alt="Watson Assistant Photo7 "></p>
+<p><strong>Step 9.</strong> Go back to the All Assistants page and click on the <strong>Skills</strong> link.</p>
+<p>  <img src="starter-kit/assistant/WA-Skills.png" alt="Watson Assistant Skills "></p>
+<p><strong>Step 10.</strong> On the Skill page, click on the action menu ( <strong><code>&#x22EE;</code></strong> ), open <strong>View API Details</strong>.</p>
+<p>  <img src="starter-kit/assistant/WA-SkillAPIProperties.png" alt="Watson Assistant Skill Properties"></p>
+<p><strong>Step 11.</strong> On the Skill Details page, make note of the <code>Skill ID</code> for future use.</p>
+<p>  <img src="starter-kit/assistant/WA-SkillDetails.png" alt="Watson Assistant Skill Details"></p>
+<p><strong>Step 12.</strong>  Go back to your dialog skill and click on the <strong>Preview Link</strong> button on the side to get a link to test and verify your assistant.</p>
+<p>  <img src="starter-kit/assistant/WA-Photo91.png" alt="Watson Assistant Photo9 "></p>
+<p><strong>Step 13.</strong> Ask the Watson Assistant chatbot some questions about COVID-19.</p>
+<p align="center">
+<img width="50%" height="50%" src="https://raw.githubusercontent.com/IraAngeles-IBM/Solution-Starter-Kit-Communication-2020-ASEAN/master/starter-kit/assistant/WA-Photo101.png">
+</p>
+
+
+
+<h1 id="integrate-your-chatbot-with-data-sources">Integrate your chatbot with data sources</h1>
+<p>Now that you&#x2019;ve created your Watson Assistant-enabled chatbot, you need to connect it to a data source. With Watson Assistant, you need to do this via a webhook.</p>
+<p>Our crisis communication chatbot uses two different sources:</p>
+<ul>
+<li><a href="https://www.ibm.com/cloud/watson-discovery" target="_blank">Watson Discovery</a></li>
+<li><a href="https://covid19api.com/" target="_blank">COVID-19 API</a></li>
+</ul>
+<h2 id="defining-webhooks">Defining webhooks</h2>
+<p>A webhook is a mechanism that allows you to call out to an external program based on something happening in your program. When used in a dialog skill, a webhook is triggered when the assistant processes a node that has a webhook enabled. The webhook collects data that you specify or that you collect from the user during the conversation and save in context variables. </p>
+<p>It sends the data as part of a HTTP POST request to the URL that you specify as part of your webhook definition. The URL that receives the webhook is the listener. It performs a predefined action using the information that you pass to it as specified in the webhook definition, and can optionally return a response.</p>
+<h2 id="make-use-of-discovery-to-get-news-information">Make use of Discovery to get news information</h2>
+<p><strong>Step 1.</strong>  From your IBM Cloud account, go to Watson Discovery.</p>
+<p><img src="starter-kit/webhook/images/discovery-service.png" alt="Discover Service"></p>
+<p><strong>Step 2.</strong>  Create a new lite service.</p>
+<p><img src="starter-kit/webhook/images/create-discovery-service.png" alt="Create Discover Service"></p>
+<p><strong>Step 3.</strong>  Make note of the API key and the URL. You need that in the next steps.</p>
+<p><img src="starter-kit/webhook/images/discovery-credentials.png" alt="Credentials"></p>
+<p><strong>Step 4.</strong> Open the Watson Discovery NEWS service, which is a prepopulated discovery dataset updated and maintained by the Watson Discovery team. </p>
+<p><img src="starter-kit/webhook/images/watson-discovery-news.png" alt="Watson Discovery NEWS"></p>
+<p><strong>Step 5.</strong> From the top right corner, open the API tab. Make note of the Collection ID and Environment ID.</p>
+<p><img src="starter-kit/webhook/images/news-api-info.png" alt="NEWS Api info"></p>
+<h2 id="creating-cloud-functions">Creating Cloud Functions</h2>
+<ol>
+<li><p>In the IBM Cloud catalog, go to <a href="https://cloud.ibm.com/functions/" target="_blank">IBM Cloud Functions</a>.</p>
+</li>
+<li><p>Click <strong>Start Creating</strong>.</p>
+<p><img src="starter-kit/webhook/images/cloud-functions.png" alt="functions"></p>
+</li>
+<li><p>Select <strong>Create Action</strong>.</p>
+<p><img src="starter-kit/webhook/images/create-action.png" alt="create"></p>
+</li>
+<li><p>Name your action. For the Runtime dropdown, select <strong>Node.js 10</strong>.</p>
+<p><img src="starter-kit/webhook/images/create-action-env.png" alt="environment"></p>
+</li>
+<li><p>Replace the code with <a href="shttps://raw.githubusercontent.com/IraAngeles-IBM/Solution-Starter-Kit-Communication-2020-ASEAN/master/starter-kit/webhook/action/covid-webhook.js" target="_blank">action/covid-webhook.js</a></p>
+<p><img src="starter-kit/webhook/images/code.png" alt="code"></p>
+</li>
+<li><p>Our code has two main parts. We decide whether to call the COVID-19 API or Watson Discovery based on a parameter sent on the function call. If a query param of <code>type=api</code> is set, you call the COVID-19 API on the <a href="https://api.covid19api.com/summary" target="_blank">summary endpoint</a>. </p>
+<p>It returns the data in the following format:</p>
+<pre><code>{
+ Countries: [
+   {
+     Country: &quot;&quot;,
+     Slug: &quot;&quot;,
+     NewConfirmed: 0,
+     TotalConfirmed: 0,
+     NewDeaths: 0,
+     TotalDeaths: 0,
+     NewRecovered: 0,
+     TotalRecovered: 0
+   },
+   {
+     Country: &quot; Azerbaijan&quot;,
+     Slug: &quot;-azerbaijan&quot;,
+     NewConfirmed: 0,
+     TotalConfirmed: 0,
+     NewDeaths: 0,
+     TotalDeaths: 0,
+     NewRecovered: 0,
+     TotalRecovered: 0
+   },
+   ...
+ ]
+}
+</code></pre></li>
+<li><p>You then parse through the list of summaries for each country and sum up to get combined stats. If there is specific country selected, you look for that country in the summary response and return the , status for that country.</p>
+<p>For example, the response for <code>type=api</code> and <code>country=US</code> is shown below.</p>
+<pre><code>{
+ &quot;result&quot;: &quot;Total Cases: 65778\nTotal Deaths: 942\nTotal Recovered: 361\n\nSource: Johns Hopkins CSSE&quot;
+}
+</code></pre></li>
+<li><p>If you want to make a call to the Discovery service, you need to set some parameters that lets you call the IAM-enabled service. On the left, click on the <strong>Parameters</strong> tab. Add the following parameters: <code>api_key</code>, <code>url</code>, <code>collection_id</code>, and <code>env_id</code>. These are the values you noted from the Watson Discovery service in the previous steps.</p>
+<p><img src="starter-kit/webhook/images/parameter.png" alt="parameters"></p>
+</li>
+<li><p>Enable the action as a web action. To do so, select the <strong>Endpoints</strong> tab on the left. Click the checkbox beside &quot;Enable as Web Action.&quot;</p>
+<p><img src="starter-kit/webhook/images/endpoint.png" alt="endpoint"></p>
+</li>
+<li><p>Make note of the HTTP URL. You will use this as the webhook for your assistant. You will have to add <code>.json</code> in the end of this url to make it work as a webhook.</p>
+<p><img src="starter-kit/webhook/images/http-endpoint.png" alt="http endpoint"></p>
+</li>
+</ol>
+<h2 id="integrate-data-sources-via-a-watson-assistant-webhook">Integrate data sources via a Watson Assistant webhook</h2>
+<p>For detailed instructions on how to do this, check out our documentation: <a href="https://cloud.ibm.com/docs/assistant?topic=assistant-dialog-webhooks" target="_blank">Making Programmatic Calls from Watson Assistant</a>.</p>
+<ol>
+<li><p>Bring up the COVID-19 assistant you created earlier. Find it in your IBM Cloud account under services &gt; IBM Watson Assistant. Open the dialog by clicking the <code>CDC COVID FAQ</code> Dialog.</p>
+<p><img src="starter-kit/webhook/images/assistant.png" alt="assistant"></p>
+</li>
+<li><p>Click on <strong>Options</strong> on the left.</p>
+<p><img src="starter-kit/webhook/images/options.png" alt="options"></p>
+</li>
+<li><p>Under Options &gt; Webhooks, in the URL text box, paste the URL from the Cloud Funciton step. Make sure to add a <code>.json</code> at the end of the URL.</p>
+<p><img src="starter-kit/webhook/images/add-url.png" alt="url"></p>
+</li>
+<li><p>Select <strong>Dialog</strong> on the left navigation.</p>
+<p><img src="starter-kit/webhook/images/dialog.png" alt="dialog"></p>
+</li>
+<li><p>Open up any dialog node you want to add a webhook call for. </p>
+</li>
+<li><p>After selecting the node, click <strong>Customize</strong>.</p>
+<p><img src="starter-kit/webhook/images/customize.png" alt="customize"></p>
+</li>
+<li><p>Enable Webhooks by moving the toggle button to <strong>On</strong> in the Webhooks section. Click <strong>Save</strong>.</p>
+<p><img src="starter-kit/webhook/images/enable-webhook.png" alt="webhooks"></p>
+</li>
+<li><p>Add any parameter your webhook needs. These will be sent as query parameters.</p>
+<p><img src="starter-kit/webhook/images/webhook-parameter.png" alt="webhook parameters"></p>
+</li>
+<li><p>Test that your webhook integration is working by going to the Try It tab and initiating a dialog that calls the webhook.</p>
+<p><img src="starter-kit/webhook/images/webhook-test.png" alt="webhook test"></p>
+</li>
+</ol>
+<p>You can easily use webhooks to give your Watson Assistant access to many external APIs and databases.</p>
+<h2 id="next-steps">Next steps</h2>
+<p>Now that you know how to create a COVID-19 chatbot and connect it to Watson Discovery and the COVID-19 API, there are a few different integration paths you can take. The following tutorials show you how to integrate this chatbot with Slack, with a simple web application, or with a Node-RED dashboard.</p>
+<ul>
+<li><a href="https://developer.ibm.com/tutorials/tutorials/create-a-covid-19-chatbot-embedded-on-a-website/" target="_blank">Embed your COVID-19 chatbot on a website</a></li>
+<li><a href="https://developer.ibm.com/tutorials/create-crisis-communication-chatbot-integrate-slack/" target="_blank">Integrate your COVID-19 chatbot with Slack</a></li>
+<li><a href="https://developer.ibm.com/tutorials/create-a-voice-enabled-covid-19-chatbot-using-node-red/" target="_blank">Integrate your COVID-19 chatbot with Node-RED to enable voice commands</a></li>
+</ul>
+<h2 id="take-on-covid-19">Take on COVID-19</h2>
+<p>Now you know how to deply watson assistant! check out other <a href="https://developer.ibm.com/technologies/artificial-intelligence/" target="_blank">AI services</a> too. Cannot wait to see what you will build.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Workshop_Watsion_Studio/Welcome.html" class="navigation navigation-prev " aria-label="Previous page: Welcome">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="starter-kit/node-red/Node-RED-chatbot.html" class="navigation navigation-next " aria-label="Next page: b) Create a voice-enabled COVID-19 chatbot using Node-RED">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"a) Create a crisis communication chatbot and connect it to news and data sources","level":"2.1","depth":1,"next":{"title":"b) Create a voice-enabled COVID-19 chatbot using Node-RED","level":"2.2","depth":1,"path":"Solution-Starter-Kit-Communication-2020-ASEAN/starter-kit/node-red/Node-RED-chatbot.md","ref":"Solution-Starter-Kit-Communication-2020-ASEAN/starter-kit/node-red/Node-RED-chatbot.md","articles":[]},"previous":{"title":"Welcome","level":"1.1","depth":1,"path":"Workshop_Watsion_Studio/Welcome.md","ref":"Workshop_Watsion_Studio/Welcome.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Solution-Starter-Kit-Communication-2020-ASEAN/ASSISTANT.md","mtime":"2020-05-09T03:46:22.872Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-09T03:57:44.359Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

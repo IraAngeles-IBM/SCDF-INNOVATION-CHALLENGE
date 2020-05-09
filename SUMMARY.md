@@ -6,9 +6,9 @@
 
 ## IBM Watson Assistant
 
-a) [Create a crisis communication chatbot and connect it to news and data sources](Solution-Starter-Kit-Communication-2020-ASEAN/ASSISTANT.md)
+* [a) Create a crisis communication chatbot and connect it to news and data sources](Solution-Starter-Kit-Communication-2020-ASEAN/ASSISTANT.md)
 
-b) [Create a voice-enabled COVID-19 chatbot using Node-RED](Solution-Starter-Kit-Communication-2020-ASEAN/starter-kit/node-red/Node-RED-chatbot.md)
+* [b) Create a voice-enabled COVID-19 chatbot using Node-RED](Solution-Starter-Kit-Communication-2020-ASEAN/starter-kit/node-red/Node-RED-chatbot.md)
 
 
 ## IBM Watson Studio
