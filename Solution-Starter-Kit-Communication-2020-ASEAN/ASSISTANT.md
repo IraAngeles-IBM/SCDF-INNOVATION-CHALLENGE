@@ -136,7 +136,7 @@ It sends the data as part of a HTTP POST request to the URL that you specify as 
 
   ![environment](starter-kit/webhook/images/create-action-env.png)
 
-5. Replace the code with [action/covid-webhook.js](shttps://raw.githubusercontent.com/IraAngeles-IBM/Solution-Starter-Kit-Communication-2020-ASEAN/master/starter-kit/webhook/action/covid-webhook.js)
+5. Replace the code with [action/covid-webhook.js](https://raw.githubusercontent.com/IraAngeles-IBM/Solution-Starter-Kit-Communication-2020-ASEAN/master/starter-kit/webhook/action/covid-webhook.js)
 
   ![code](starter-kit/webhook/images/code.png)
 
