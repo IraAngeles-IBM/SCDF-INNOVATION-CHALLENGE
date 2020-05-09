@@ -1,6 +1,7 @@
-# IBM Developer Ecosystem Group - ASEAN 
+# Welcome to SCDF Innovation Challenge
 
-- Zack Yeo - IBM
-- [Nuttapong Wong Aree](https://developer.ibm.com/profiles/wonganut/) - IBM
-- [Isaias Rafael Angeles (Ira)](https://developer.ibm.com/profiles/isaias/) - IBM
 
+![Welcome to SCDF Innovation Challenge](Workshop_Watsion_Studio/Images/scdf.jpg)
+
+
+## Here are some quick tutorials to show participants how to leverage on IBM Cloud! Any questions pls reach out to us via slack channel

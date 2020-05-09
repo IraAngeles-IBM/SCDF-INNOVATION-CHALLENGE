@@ -2,7 +2,7 @@
 
 ## SCDF INNOVATION CHALLENGE WITH IBM CALL FOR CODE
 
-* [Welcome](Workshop_Watsion_Studio/Welcome.md)
+* [Welcome](README.md)
 
 ## IBM Watson Assistant
 
@@ -19,4 +19,4 @@
 
 ## IBM Developer - ASEAN
 
-* [Team](README.md)
+* [Team](team.md)
