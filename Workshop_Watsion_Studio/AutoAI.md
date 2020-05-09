@@ -24,7 +24,7 @@ WatsonStudioWorkshop.zip file provided by the instructor, the data will be resid
 
 3. Watson Machine Learning Service
     * You should have a Watson Machine Learning service provisioned on IBM Cloud and assoicated with the
-current project. If you don’t have one, read how to add a new WML service in the Lab 2 [here](https://bookdown.org/caoying4work/watsonstudio-workshop/jn.html#createwml).
+current project. If you don’t have one, read how to add a new WML service in the Lab 2 [here](https://github.com/zacaintmyname/CFCImages/tree/master/WatsonStudioWorkshop/3-%20Insurance%20Fraud%20Detection%20using%20AutoAI).
 
 Now you should be ready to start the lab!
 
