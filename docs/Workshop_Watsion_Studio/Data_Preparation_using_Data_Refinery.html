@@ -1,0 +1,618 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Data Preparation using Data Refinery · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="AutoAI.html" />
+    
+    
+    <link rel="prev" href="Introduction.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">SCDF INNOVATION CHALLENGE WITH IBM CALL FOR CODE</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="Welcome.html">
+            
+                <a href="Welcome.html">
+            
+                    
+                    Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">IBM Watson Assistant</li>
+        
+        
+    
+
+    
+        
+        <li class="header">IBM Watson Studio</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="Introduction.html">
+            
+                <a href="Introduction.html">
+            
+                    
+                    Introduction to Data Science
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.2" data-path="Data_Preparation_using_Data_Refinery.html">
+            
+                <a href="Data_Preparation_using_Data_Refinery.html">
+            
+                    
+                    Data Preparation using Data Refinery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="AutoAI.html">
+            
+                <a href="AutoAI.html">
+            
+                    
+                    Auto AI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">IBM Developer - ASEAN</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Team
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Data Preparation using Data Refinery</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-2-data-preparation-using-data-refinery">Chapter 2 Data Preparation using Data Refinery</h1>
+<h2 id="21-introduction-to-data-refinery">2.1 Introduction to Data Refinery</h2>
+<p>IBM Data Refinery, first released in November 2017, is part of the Watson Data Platform integrated environment and is a self-service data preparation client for data scientists, data engineers, and business analysts. With it, you can quickly transform large amounts of raw data into consumable, quality information that&#x2019;s ready for analytics. IBM Data Refinery makes it easy to explore, prepare, and deliver data that people across your organization can trust. It provides:</p>
+<ul>
+<li>Ability to access data wherever it resides (in the cloud, on-premises, or on your desktop)</li>
+<li>Powerful shaping operations to clean, organize, fix, and validate data</li>
+<li>Scripting support for RStudio&#x2019;s dplyr for the efficient and flexible manipulation of data sets
+-Support for single- and multi-column operations and the creation of complex new columns from existing columns</li>
+<li>Ability to undo, redo, and delete steps in a data flow</li>
+<li>Monitoring of data preparation flows</li>
+<li>Interactive data validation and automatic detection of anomalies such as missing values, outliers, and duplicates</li>
+<li>Visualizations that provide insight into large amounts of data</li>
+</ul>
+<p>When refining your data, the <strong>Data</strong> tab is where you can see a simple of how you data looks and see the result of any operation you select to do on your data. The <strong>Profile</strong> tab allows you to see a summary of some basic statistical analysis and can be used to find anomalies. The <strong>Visualizations</strong> tab helps with getting insights into your data.</p>
+<h2 id="22-prerequisites">2.2 Prerequisites</h2>
+<ul>
+<li><p>You should have a empty project (We named it Watson Studio Workshop as an example) created in Watson Studio. If you don&#x2019;t have one, read how to create an new project here(Link to Intro) starting Step 5.</p>
+</li>
+<li><p>Download sample <em>data adult_person_info.csv</em> and <em>adult_org_info.csv</em> for this lab <a href="https://github.com/zacaintmyname/CFCImages/tree/master/WatsonStudioWorkshop/2%20-%20Data%20Preparation%20in%20Data%20Refinery" target="_blank">here</a> or if you have the WatsonsStudioWorkshop.zip file provided by the instructor, the data will be reside in WatsonsStudioWorkshop/01-Data Preparation in Data Refinery.</p>
+</li>
+</ul>
+<h2 id="23-add-datasets-to-the-project">2.3 Add Datasets to the Project</h2>
+<ol>
+<li><p>Go to the newly created <strong>Watson Stutido Workshop</strong> project and add the datasets to the project:</p>
+</li>
+<li><p>Click on <strong>Assets</strong> on the panel found under the name of your project at the top of the page.</p>
+</li>
+<li>At the top right of the page, click on the icon that has zeros and ones (two of each).</li>
+<li>Click on <strong>Load</strong> and drag and drop the two files <em>adult_person_info.csv</em> and <em>adult_org_info.csv</em>.</li>
+<li>You will notice that once the files are uploaded, they will be added under Data assets.</li>
+</ol>
+<p>Adding data assets
+<img src="Images/8.png" alt="Adding data assets"></p>
+<ol>
+<li><p>Review Data Refinery UI:</p>
+</li>
+<li><p>Go to the triple dot menu next to next to <em>adult_person_info.csv</em> under <em>Data assets</em> and select <strong>Refine</strong>. This will open a page that shows a sample of the content, where you can start cleaning and reshaping the data set.</p>
+</li>
+<li>On the panel on the right, you will find <strong>Details</strong> including the project the data asset belongs to, and description of the resulting data set we will get after the refining process. Close it for the time being.</li>
+<li>Click on <strong>Steps</strong>, which you can find right hand-side of the page. This is where you will see each operation you will define while transforming the data. It shows the data flow defining the operations to be done on the entire data set.</li>
+</ol>
+<p>Data tab
+<img src="Images/9.png" alt="Data Tab"></p>
+<ol>
+<li>You may notice that an auto data type conversion step has been applied, in order to practice how to mannually convert column type, we will remove this step for now by clicking on the trash bin icon.</li>
+</ol>
+<p>Remove Convert Column Type
+<img src="Images/10.png" alt="Remove Convert Column Type"></p>
+<h2 id="34-review-data-profile">3.4 Review Data Profile</h2>
+<ol>
+<li><p>Skim through data displayed in the <strong>Data</strong> tab and then click on the <strong>Profile</strong> tab and take a quick look at data summary and get a feel of you data. You will notice some weird values under <strong>FREQUENCY</strong> for some fields. For example, you will notice that:</p>
+</li>
+<li><p>Some values under <strong>AGE</strong> contain additional string such as &#x201C;years old&#x201D;,</p>
+</li>
+<li>For <strong>Education</strong>, there are some additional values with extra spaces at the beginning and possibly the end of the string,</li>
+<li>Empty cells in the <strong>OCCUPATION</strong> column,</li>
+<li>and there are multiple values under <strong>GENDER</strong> that seem to be meant to represent the value Male, etc.</li>
+</ol>
+<p>That&#x2019;s why our data needs to be cleaned.
+Profile tab
+<img src="Images/11.png" alt="Profile Tab"></p>
+<h2 id="35-data-harmonization-age">3.5 Data Harmonization: AGE</h2>
+<ol>
+<li><p>Standardize the AGE field:</p>
+</li>
+<li><p>As mentioned eariler, you will notice some values with additional string such as years old. What we want is to just retain the numerical part, which can only be a two-digit number in our case (we know there are no additional characters that were added before the numerical part of the values or that the digits contain no weird characters).</p>
+<p align="center">
+Harmonization data in the AGE field
+</p><p align="center">
+<img width="50%" height="50%" src="Images/12.png">
+</p>
+</li>
+<li><p>Click on <strong>+Operation</strong> and select <strong>Split column</strong>, which you can find under <strong>ORGANIZE</strong>.</p>
+</li>
+<li>Choose AGE as the <strong>Selected column</strong>.</li>
+<li>Under <strong>POSITION</strong> tab, type 2 in the <strong>Positions</strong> field and <age_num,age_str> in the <strong>Names of new columns</strong>. Make sure to unselect <strong>Keep original column</strong></age_num,age_str></li>
+<li>Click <strong>Apply</strong>.</li>
+</ol>
+<p>Bear in mind that this is not the best approach to handle this. This is just provide an example of how to use the <strong>split column</strong> operation.</p>
+<p>Harmonization data in the AGE field 2
+<img src="Images/13.png" alt="Harmonization data in the AGE field 2"></p>
+<ul>
+<li>Go to the <strong>Data</strong> tab and remove the newly created column called <em>AGE_str</em>, which only contain the string part of the age.</li>
+</ul>
+<p>Remove AGE_str
+<img src="Images/14.png" alt="Remove AGE_str"></p>
+<ul>
+<li>Go to column called <em>AGE_num</em> and rename it to <em>AGE</em> by clicking on the little pencil icon.</li>
+<li>Go to the <strong>Profile</strong> tab again to for a final check.</li>
+</ul>
+<h2 id="36-convert-data-type">3.6 Convert Data Type</h2>
+<ol>
+<li>Change <strong>AGE</strong> data type to <strong>Integer</strong> by clicking on the triple dots, then CONVERT COLUMN&#x2026;&gt; Integer. Data Refinery will put a dot in front of the recommended data type.</li>
+</ol>
+<p>Convert data type
+<img src="Images/15.png" alt="Convert data type"></p>
+<h2 id="37-data-harmonization-education">3.7 Data Harmonization: EDUCATION</h2>
+<ol>
+<li><p>Standardize the <em>AGE</em> field:</p>
+</li>
+<li><p>Click on the <strong>Profile</strong> tab and take a closer look at the column <em>EDUCATION</em>. You notice there are some additional values with extra spaces at the beginning and possibly the end of the string.</p>
+</li>
+</ol>
+<p>Harmonization data in the EDUCATION field
+<img src="Images/16.png" alt="Harmonization data in the EDUCATION field"></p>
+<ul>
+<li>Click on <strong>+Operation</strong> and select <strong>Text</strong>, which you can find under <strong>FREQUENTLY USED</strong>.</li>
+<li>Choose <em>EDUCATION</em> as the <strong>Selected column</strong>, <strong>Collapse spaces</strong> as the <strong>Text Operation</strong>.</li>
+<li>Click <strong>Apply</strong> and go to the <strong>Profile</strong> tab again to check if all the additional values have been removing. You will notice the we still have Some - college as an additional value, which we want to harmonize and change to <em>Some-college</em>.</li>
+</ul>
+<p>Harmonization data in the EDUCATION field 2
+<img src="Images/17.png" alt="Harmonization data in the EDUCATION field 2"></p>
+<ul>
+<li>Click on <strong>+Operation</strong> and select <strong>Replace substring</strong>, which you can find under <strong>CLEANSE</strong>.</li>
+<li>Choose <em>EDUCATION</em> as the <strong>Selected column</strong>.</li>
+<li>Under <strong>TEXT</strong> tab, type Some - college in <strong>Value</strong> field and Some-college in the <em>Enter the replacement string</em>. Make sure to select <strong>Replace all occurrences</strong></li>
+<li>Click <strong>Apply</strong>.</li>
+</ul>
+<p>Harmonization data in the EDUCATION field 3
+<img src="Images/18.png" alt="Harmonization data in the EDUCATION field 3"></p>
+<ul>
+<li>We also want to convert all values in the EDUCATION column to lower case. So, click on <strong>+Operation</strong> and select <strong>Text</strong>, which you can find under <strong>FREQUENTLY USED</strong>.</li>
+<li>Choose EDUCATION as the <strong>Selected column</strong>, <strong>Lower case</strong> as the <strong>Text Operation</strong>.</li>
+<li>Click <strong>Apply</strong> and go to the <strong>Profile</strong> tab again to for a final check.</li>
+</ul>
+<p>Harmonization data in the EDUCATION field 4
+<img src="Images/19.png" alt="Harmonization data in the EDUCATION field 4"></p>
+<h2 id="38-remove-missing-values-in-occupation">3.8 Remove Missing Values in OCCUPATION</h2>
+<ol>
+<li><p>Removing empty rows (List-wise deletion):</p>
+</li>
+<li><p>Go to the <strong>Data</strong> tab.</p>
+</li>
+<li>Go to the column called OCCUPATION and remove rows with any empty values by clicking on the triple dot menu next to the column name and selecting <strong>Remove empty rows</strong>.</li>
+</ol>
+<p>Removing empty rows
+<img src="Images/20.png" alt="Removing empty rows"></p>
+<ul>
+<li>Go to the <strong>Profile</strong> tab to check if all empty values have been remove for OCCUPATION.</li>
+</ul>
+<p>Note that you will typically try to understand the different reasons behind having missing values and act accordingly. Some of the techniques used in such situations may include:</p>
+<ul>
+<li>Using deletion methods such as:<ul>
+<li>List-wise deletion</li>
+<li>pairwise deletion</li>
+</ul>
+</li>
+<li>Single imputation methods such as:<ul>
+<li>Mean/Mode substitution</li>
+<li>Regression Imputation</li>
+</ul>
+</li>
+<li>Model-based methods such as:<ul>
+<li>Maximum Likelihood</li>
+<li>Multiple Imputation</li>
+</ul>
+</li>
+</ul>
+<h2 id="39-data-harmonization-gender">3.9 Data Harmonization: GENDER</h2>
+<ol>
+<li><p>Standardize the GENDER field:</p>
+</li>
+<li><p>Click on the <strong>Profile</strong> tab and take a closer look at the column <em>GENDER</em>. You will notice some additional values other than Male and Female, mainly ones that we want to change to Male.</p>
+</li>
+</ol>
+<p>Harmonization data in the SEX field
+<img src="Images/21.png" alt="Harmonization data in the SEX field"></p>
+<ul>
+<li>Click on <strong>+Operation</strong> and select <strong>Replace substring</strong>, which you can find under <strong>CLEANSE</strong>.</li>
+<li>Choose <strong>GENDER</strong> as the <em>Selected column</em>.</li>
+<li>Under <strong>PATTERN</strong> tab, type &lt;^(?!(Male|Female))([Mm].<em>)&gt; in the <strong>Regular expression</strong> field and Male</em> under <strong>Enter the replacement string</strong>. Make sure to select <strong>Replace all occurrences</strong>.</li>
+</ul>
+<p>What is meant by ^(?!(Male|Female))([Mm].) is to find any expression that doesn&#x2019;t start with Male* or Female and starts with the letter M or m, which could be followed by any character.</p>
+<p>regex
+<img src="Images/22.png" alt="regex"></p>
+<ul>
+<li>Click Apply and go to the Profile tab again to for a final check.</li>
+</ul>
+<p>Harmonization data in the GENDER field 2
+<img src="Images/23.png" alt="Harmonization data in the GENDER field 2"></p>
+<h2 id="310-remove-duplicates">3.10 Remove Duplicates</h2>
+<ol>
+<li><p>Remove duplicate values based on the UNIQUE_ID:</p>
+</li>
+<li><p>Go to the <strong>Data</strong> tab.</p>
+</li>
+<li>Go to the column called <em>UNIQUE_ID</em> and remove rows with any duplicate UNIQUE_ID values by clicking on the triple dot menu next to the column name and selecting <strong>Remove duplicates</strong>.</li>
+</ol>
+<p>Remove duplicate values based on the UNIQUE_ID
+<img src="Images/24.png" alt="Removing duplicate values based on the UNIQUE_ID rows"></p>
+<h2 id="311-join-datasets">3.11 Join Datasets</h2>
+<ol>
+<li><p>Now we will join two datasets:</p>
+</li>
+<li><p>Click on the <strong>Data</strong> tab to see a sample of your data.</p>
+</li>
+<li>Click on <strong>+Operation</strong> and then select <strong>Join</strong>, which you can find under <strong>ORGANIZE</strong>. This is to join both the data assets we added namely the one we are currently refining, <em>adult_person_info.csv</em>, and <em>adult_org_info.csv</em>.</li>
+</ol>
+<p>Join
+<img src="Images/25.png" alt="Join"></p>
+<p>PS: Make sure UNIQUE_ID for both datasets are either String or Integer format to sync</p>
+<ul>
+<li><p>Select <strong>Inner join</strong> as the method of how we want our data to be combined (Inner Join selects records that have matching column value(s) in both tables). By default, the <strong>Source</strong> is selected as the current data asset (<em>adult_person_info.csv</em>).</p>
+</li>
+<li><p>Choose <em>adult_org_info.csv</em> as the <strong>Data set to join</strong>. Click on the little eye icon to preview data, you will find it has a column <strong>UNIQUE_ID</strong> which is our join key. Click <strong>Apply</strong>.</p>
+</li>
+</ul>
+<p>Data preview
+<img src="Images/26.png" alt="Data preview"></p>
+<ul>
+<li><p>Use the default values for the <strong>Suffix</strong> field, which is just a way for you to differentiate any duplicate fields resulted during the joining process. You can also modify it if you want.</p>
+</li>
+<li><p>For the <strong>JOIN KEYS</strong>, select UNIQUE_ID representing the employee ID, as the join key for both data sets and click <strong>Next</strong></p>
+</li>
+</ul>
+<p>Joining two data sets
+<img src="Images/27.png" alt="Joining two data sets"></p>
+<ul>
+<li>Keep all columns and select <strong>Apply</strong>.</li>
+</ul>
+<p>Keep all columns
+<img src="Images/28.png" alt="Keep all columns"></p>
+<ol>
+<li><p>We will notice that there are 2 columns representing <strong>OCCUPATION</strong>, one coming from each of the data sets. Let&#x2019;s check to see if they contain the exact same values.</p>
+</li>
+<li><p>Click on <strong>+Operation</strong> and select <strong>Calculate</strong>, which you can find under FREQUENTLY USED.</p>
+</li>
+<li>Choose OCCUPATION_x as the Selected column, Is equal to as the Operation and OCCUPATION_y as the COLUMN.</li>
+<li>Select to Create new column for the results and enter <strong>&#x201C;OCCUPATION_CHECK&#x201D;</strong> as the New column name.</li>
+<li>Click <strong>Apply</strong>. You will see the resulting column added at the right end of the table.</li>
+</ol>
+<p>Create a new column for OCCUPATION_CHECK
+<img src="Images/29.png" alt="Create a new column for OCCUPATION_CHECK"></p>
+<ol>
+<li><p>Count OCCUPATION_CHECK:</p>
+</li>
+<li><p>In the space next to the <strong>+Operation button</strong>, place the cursor and select <strong>count</strong>.</p>
+</li>
+<li>Click on the count that was added to the box and select count(<column>).</column></li>
+<li>Click on and choose the newly created column (we called it OCCUPATION_CHECK).</li>
+<li>Click <strong>Apply</strong>.</li>
+</ol>
+<p>Count OCCUPATION_CHECK
+<img src="Images/30.png" alt="Count OCCUPATION_CHECK"></p>
+<ol>
+<li>The result shows that OCCUPATION_x and OCCUPATION_y have identical values.</li>
+</ol>
+<p>Check Results
+<img src="Images/countoutput.png" alt="Check Results"></p>
+<h2 id="312-undo-steps">3.12 Undo Steps</h2>
+<ol>
+<li><p>So we can just keep one of them and keep one OCCUPATION column:</p>
+</li>
+<li><p>Go back <strong>2 steps</strong> by either clicking on the Undo shaped button found at the top middle of the page or by going to the step added under <strong>Steps</strong> and clicking on the bin icon. Whichever way you select, you will need to do it <strong>twice</strong>.</p>
+</li>
+</ol>
+<p align="center">
+Delete steps</p><p align="center">
+<img width="50%" height="50%" src="Images/31.png">
+</p>
+
+<ul>
+<li>Go to column called <em>OCCUPATION_x</em> and rename it to <em>OCCUPATION</em> by clicking on the pencil shaped icon next to the column name.</li>
+</ul>
+<p>Rename OCCUPATION
+<img src="Images/32.png" alt="Rename OCCUPATION"></p>
+<ul>
+<li>Go to column called <em>OCCUPATION_y</em> and remove by clicking on the triple dot menu next to the column name and selecting <strong>Remove</strong>.</li>
+</ul>
+<p align="center">
+Remove OCCUPATION_y
+</p><p align="center">
+<img width="50%" height="50%" src="Images/33.png"> 
+</p>
+
+<h2 id="313-data-visualization">3.13 Data Visualization</h2>
+<p>Data Refinery does not only include powerful shaping operations to clean, organize, fix, and validate data but also has built-in visualization capblities to derive insights from data.</p>
+<ol>
+<li>Click on the <strong>Visualization Tab</strong>, choose <strong>OCCUPATION</strong> from the dropdown menu, then click <strong>Visualize Data</strong>.</li>
+</ol>
+<p>Visualize OCCUPATION
+<img src="Images/34.png" alt="Visualize OCCUPATION"></p>
+<ol>
+<li>Data Refinery will recommend the best techniques to visulize the data. For OCCUPATION, it recommended the pie chart showing you the distribution of OCCUPATION. Click on other <strong>CHART TYPES</strong> to see other other visulization outputs if interested.</li>
+</ol>
+<p>Pie Chart
+<img src="Images/35.png" alt="Pie Chart"></p>
+<h2 id="314-save-and-run-the-data-flow">3.14 Save and Run the Data Flow</h2>
+<ol>
+<li>Let&#x2019;s say our data preparation effort is complete and you want to run the data flow. Click on the button on the top right corner, choose <strong>Save and create job</strong>.</li>
+</ol>
+<p>Running the data flow
+<img src="Images/36.png" alt="Running the data flow"></p>
+<ol>
+<li>This will take you to a page where you will need to configure the Data Refinery flow details (the stream) and the Data Refinery Flow output (a file). Give the job a name(We named it Data Preparation) and keep the rest as it is. Click <strong>Create</strong> and <strong>Run</strong>.</li>
+</ol>
+<p>Create a job
+<img src="Images/job.png" alt="Create a job"></p>
+<ol>
+<li>Note that if you click on the <strong>Add Schedule</strong> button, you will have the ability to schedule your data preparation, which is very useful if you do these steps on dynamic data.</li>
+</ol>
+<p>For Dynamic Data
+<img src="Images/37.png" alt="Scheduled"></p>
+<ol>
+<li>At this point, you should see a status on your data preparation job.</li>
+</ol>
+<p>Job status
+<img src="Images/38.png" alt="Job status"></p>
+<ol>
+<li>If you go back to the <strong>Assets</strong> page of your project (by clicking on My Projects &gt; Watson Studio Workshop), you will notice that the new csv file has been added as a new data asset. You can also find the data flow you have created if you scroll down to the end of the same page. Note that you can refine your data flow at any time by clicking on the triple dot menu next to the data flow name.</li>
+</ol>
+<p>Data Refineary outputs
+<img src="Images/39.png" alt="Data Refineary outputs"></p>
+<p><strong>You now know how to profile, prepare and analyze your data in Watson Studio using Data Refinery. These data flows can be shared, edited and scheduled!</strong></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Introduction.html" class="navigation navigation-prev " aria-label="Previous page: Introduction to Data Science">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="AutoAI.html" class="navigation navigation-next " aria-label="Next page: Auto AI">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Data Preparation using Data Refinery","level":"3.2","depth":1,"next":{"title":"Auto AI","level":"3.3","depth":1,"path":"Workshop_Watsion_Studio/AutoAI.md","ref":"Workshop_Watsion_Studio/AutoAI.md","articles":[]},"previous":{"title":"Introduction to Data Science","level":"3.1","depth":1,"path":"Workshop_Watsion_Studio/Introduction.md","ref":"Workshop_Watsion_Studio/Introduction.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Workshop_Watsion_Studio/Data_Preparation_using_Data_Refinery.md","mtime":"2020-05-09T03:02:03.978Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-09T03:48:53.841Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
