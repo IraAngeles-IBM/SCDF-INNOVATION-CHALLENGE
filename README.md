@@ -1,7 +1,7 @@
 # Welcome to SCDF Innovation Challenge
 
 
-![Welcome to SCDF Innovation Challenge](Workshop_Watsion_Studio/Images/scdf.jpg)
+![Welcome to SCDF Innovation Challenge](./Workshop_Watsion_Studio/Images/scdf.jpg)
 
 
 We have prepared 2 tutorials to show participants how to leverage IBM Cloud for the hackathon!
