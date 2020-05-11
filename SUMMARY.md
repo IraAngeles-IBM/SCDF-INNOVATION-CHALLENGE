@@ -13,7 +13,7 @@
 
 ## Introduction to Data Science
 
-* [Data Science Starter Kit](Workshop_Watsion_Studio/Introduction.md)
+* [Provisioning IBM Watson Studio](Workshop_Watsion_Studio/Introduction.md)
 * [Data Preparation using Data Refinery](Workshop_Watsion_Studio/Data_Preparation_using_Data_Refinery.md)
 * [Auto AI](Workshop_Watsion_Studio/AutoAI.md)
 
