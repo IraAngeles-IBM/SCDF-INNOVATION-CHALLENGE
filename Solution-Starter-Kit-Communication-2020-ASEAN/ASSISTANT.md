@@ -242,7 +242,8 @@ Now that you know how to create a COVID-19 chatbot and connect it to Watson Disc
 - [Integrate your COVID-19 chatbot with Slack](https://developer.ibm.com/tutorials/create-crisis-communication-chatbot-integrate-slack/)
 - [Integrate your COVID-19 chatbot with Node-RED to enable voice commands](https://developer.ibm.com/tutorials/create-a-voice-enabled-covid-19-chatbot-using-node-red/)
 
-## Take on COVID-19
+## Congratulations on building your first Chatbot with Watson Assistant!
 
-Now you know how to deply watson assistant! check out other [AI services](https://developer.ibm.com/technologies/artificial-intelligence/) too. Cannot wait to see what you will build.
+While this tutorial is based on managing crisis communication during COVID19 with AI, there are many other use cases that we can utilise technology! If you are interested, check out other [AI services](https://developer.ibm.com/technologies/artificial-intelligence/) too. Cannot wait to see what your team will build!
+
 

@@ -228,6 +228,6 @@ return msg;
 
 You can expand the above dashboard to include daily new infections from [covid19api](https://api.covid19api.com/summary) data, charts, tables, and the chatbot UI.
 
-## Build a Call for Code Crisis Communications solution!
+## Congratulations on building a Call for Code Crisis Communication solution!
 
-Now that you have completed this tutorial, you are ready to modify these example flows and Node-RED Dashboard to build a [Call for Code COVID Crisis Communications](https://developer.ibm.com/callforcode/getstarted/covid-19/) solution.
+Awesome! You have now completed the tutorial on building a chatbot with NodeRED on IBM Cloud! Feel free to modify and enhance your solutions with other services on IBM Cloud. We are looking forward to your exciting solutions!
