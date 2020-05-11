@@ -1,5 +1,4 @@
-# Welcome to SCDF Innovation Challenge
-
+<center><h1>Welcome to SCDF Innovation Challenge</h1></center>
 
 ![Welcome to SCDF Innovation Challenge](./Workshop_Watsion_Studio/Images/scdf.jpg)
 
