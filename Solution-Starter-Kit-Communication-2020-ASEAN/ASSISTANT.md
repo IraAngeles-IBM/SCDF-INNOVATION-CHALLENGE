@@ -46,7 +46,7 @@ We show you how to create a chatbot using Watson Assistant, a tool that enables 
   
   ![Watson Assistant Photo4 ](starter-kit/assistant/WA-Photo4.png)
 
-**Step 6.** Click **Import skill > Choose JSON file** and import the [`skill-CDC-COVID-FAQ.json`](https://raw.githubusercontent.com/IraAngeles-IBM/Solution-Starter-Kit-Communication-2020-ASEAN/master/starter-kit/assistant/skill-CDC-COVID-FAQ.json) file.
+**Step 6.** Click **Import skill > Choose JSON file** and import the [`skill-CDC-COVID-FAQ.json`](https://github.com/IraAngeles-IBM/Solution-Starter-Kit-Communication-2020-ASEAN/blob/master/starter-kit/assistant/skill-CDC-COVID-FAQ.json) file.
   
   ![Watson Assistant Photo5 ](starter-kit/assistant/WA-Photo5.png)
 
@@ -136,7 +136,7 @@ It sends the data as part of a HTTP POST request to the URL that you specify as 
 
   ![environment](starter-kit/webhook/images/create-action-env.png)
 
-5. Replace the code with [action/covid-webhook.js](https://raw.githubusercontent.com/IraAngeles-IBM/Solution-Starter-Kit-Communication-2020-ASEAN/master/starter-kit/webhook/action/covid-webhook.js)
+5. Replace the code with [action/covid-webhook.js](https://github.com/IraAngeles-IBM/Solution-Starter-Kit-Communication-2020-ASEAN/tree/master/starter-kit/webhook/action)
 
   ![code](starter-kit/webhook/images/code.png)
 
