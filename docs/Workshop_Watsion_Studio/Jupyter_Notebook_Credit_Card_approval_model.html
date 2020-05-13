@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Provisioning IBM Watson Studio · GitBook</title>
+        <title>Jupyter Notebook - Credit Card Approval Model · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Data_Preparation_using_Data_Refinery.html" />
     
-    
-    <link rel="prev" href="../Solution-Starter-Kit-Communication-2020-ASEAN/starter-kit/node-red/Node-RED-chatbot.html" />
+    <link rel="prev" href="AutoAI.html" />
     
 
     </head>
@@ -144,7 +142,7 @@
         
         
     
-        <li class="chapter active" data-level="3.1" data-path="Introduction.html">
+        <li class="chapter " data-level="3.1" data-path="Introduction.html">
             
                 <a href="Introduction.html">
             
@@ -183,7 +181,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="Jupyter_Notebook_Credit_Card_approval_model.html">
+        <li class="chapter active" data-level="3.4" data-path="Jupyter_Notebook_Credit_Card_approval_model.html">
             
                 <a href="Jupyter_Notebook_Credit_Card_approval_model.html">
             
@@ -370,7 +368,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Provisioning IBM Watson Studio</a>
+        <a href=".." >Jupyter Notebook - Credit Card Approval Model</a>
     </h1>
 </div>
 
@@ -385,72 +383,70 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="data-science-starter-kit">Data Science Starter Kit</h1>
-<h2 id="chapter-1-introduction">Chapter 1 Introduction</h2>
-<p>This workshop is an introduction to Watson Studio, the IBM platform for data science and artificial intelligence. Completing the exercises does not require any specific skills or knowledge. At the end of this session you should be able to use the product on your own.</p>
-<p>In this workshop, we will:</p>
-<ul>
-<li><p>Setup your Watson Studio Cloud account</p>
+                                <h1 id="jupyter-notebook---credit-card-approval-model">Jupyter Notebook - Credit Card Approval Model</h1>
+<p>In this tutorial, you will be using Machine Learning and Jupyter Notebook using Watson Sutdio.</p>
+<h2 id="steps">Steps</h2>
+<ol>
+<li><p>Create Project in Watson Studio if you have not done so.</p>
+<p> <img src="Images/create_project.png" alt="Create Project"></p>
 </li>
-<li><p>Prepare data using Data Refinery</p>
+<li><p>Download data file <a href="https://gist.github.com/IraAngeles-IBM/ea680e80b7ddcabd98d334475c87255a" target="_blank">cc_applications.csv</a></p>
 </li>
-<li><p>Build and Deploy models in Jupyter Notebooks to detect fraud</p>
+<li><p>Click on the <strong>Find and Add Data</strong> button (a), then upload the data file to the drop box (b). The uploaded data file will then appear in the Data Assets (c).</p>
+<p> <img src="Images/data_set.png" alt="data set"></p>
 </li>
-<li><p>Create a model using AutoAI</p>
+<li><p>Download notebook file <a href="https://gist.github.com/IraAngeles-IBM/ea680e80b7ddcabd98d334475c87255a" target="_blank">Credit Card Approval Model .ipynb</a> and <strong>add to the project</strong>, select <strong>Notebok</strong> (a).  </p>
+<p> <img src="Images/notebook.png" alt="notebook">)</p>
 </li>
-<li><p>Create a model using the SPSS canvas</p>
+<li><p>Select <strong>From file</strong>.  Either browse directories or drag and drop to the box.  The file will then be added to the project Assets.</p>
+<p> <img src="Images/add_notebook.png" alt="add from file"></p>
 </li>
-</ul>
-<p>To begin, please <a href="https://github.com/zacaintmyname/CFCImages" target="_blank">clone the relevant data files</a> that would be the baseline for to following workshop exercises.</p>
-<h2 id="1-navigate-to-ibm-cloud-dashboard">1. Navigate to IBM Cloud dashboard</h2>
-<p><img src="Images/1.png" alt="Cloud Catelog"></p>
-<ul>
-<li><p>Now let&#x2019;s create Watson Studio service instance. You can skip this step if you already have Watson Studio service instance created.</p>
+<li><p>Click on the <strong>Credit Card Approval Model</strong> to edit</p>
+<p> <img src="Images/notebook_assets.png" alt="notebook_assets.png"></p>
 </li>
-<li><p>Select <strong>Catalog</strong> found at the top right of the page.</p>
+<li><p>You can now access the notebook and start with the exercise. We will be using Python 3.6. Click on the <strong>pen</strong> icon to edit the file.</p>
+<p> <img src="Images/edit_notebook.png" alt="edit_notebook.png"></p>
 </li>
-<li>Click on <strong>Watson</strong> from the menu on the left, which you can find under Platform services.</li>
-<li>Select <strong>Watson Studio</strong>.</li>
-</ul>
-<h2 id="2-locate-watson-studio-service-in-the-catelog">2. Locate <strong>Watson Studio</strong> service in the Catelog</h2>
-<p><img src="Images/2.png" alt="Locate Watson Studio service in the Catelog"></p>
-<ul>
-<li><p>Enter the <strong>Service name</strong> or keep the default value and add relevant <strong>tags</strong> (e.g. CallforCode) to organise your services. </p>
+<li><p>To start select the first cell and click on the <strong>Run</strong> button to execute the code. The cell being executed is highlighted. </p>
+<p> <img src="Images/run.png" alt="run.png"></p>
 </li>
-<li><p>Select Lite for the Plan, which you can find under Pricing Plans and is already selected. Please note you are only allowed one instance of a Lite plan per service.</p>
+<li><p>Then go to the cell of <strong>2. Loading Our Dataset</strong> (a), select the <strong>Add Data icon</strong> (b), click on the drop down <strong>Insert to code</strong> (c), then select <strong>pandas DataFrame</strong> (d)</p>
+<p> <img src="Images/load_dataset.png" alt="load_dataset.png"></p>
 </li>
-<li><p>Click on <strong>Create</strong>.</p>
+<li><p>In the added code replace the following</p>
+<pre><code>    df_data_1 = pd.read_csv(body)
+    df_data_1.head()
+</code></pre><p>by</p>
+<pre><code>applicants = pd.read_csv(body,header=None,na_values=[&apos;NaN)&apos;])
+</code></pre><p><img src="Images/replace_code.png" alt="replace_code.png"></p>
 </li>
-</ul>
-<h2 id="3-create-watson-studio-service">3. Create <strong>Watson Studio</strong> service</h2>
-<ul>
-<li><p>You will be taken to the main page of the service. Click on Get Started. This will take you to the Watson Studio platform. If this is your first time on this platform and you don&#x2019;t have an associated account, you will be asked to Confirm your IBM Cloud organization and space information.
-<img src="Images/3.png" alt="IBM Watson Studio service (Get Started)"></p>
+<li><p>In the current cell, click on the <strong>Run</strong> button and should the the results.</p>
+<p><img src="Images/results1.png" alt="results1.png"></p>
 </li>
-<li><p>Create a <strong>New project</strong> from the IBM Watson Watson main page if you don&#x2019;t have any projects previously created.</p>
+<li><p>You can go thru the code either <strong>cell by cell</strong> or  click on <strong>Cell &gt; Rull all below</strong>.  The following are the sample results.</p>
+<p><img src="Images/continue.png" alt="continue.png"></p>
 </li>
-</ul>
-<h2 id="4-create-a-new-project">4. Create a new project</h2>
-<p><img src="Images/4.png" alt="New project"></p>
-<ul>
-<li><p>Next choose <strong>Empty Project</strong>
-<img src="Images/5.png" alt="Empty project"></p>
+<li><p>Now we can proceed to publish and deploy this model via (REST API).  Proceed to the cell with <strong>Bonus: Deploy model on the cloud using IBM Watson Machine Learning.</strong>. Then add the <strong>wml_credentials</strong> from IBM Cloud.  Refer to the next step how to get the credentials.</p>
+<p><img src="Images/credentials.png" alt="credentials.png"></p>
 </li>
-<li><p>Enter a Name and Description for your new to-be-created project.
-<img src="Images/6.png" alt="Create a new project"></p>
+<li><p>Get the wml credentials from IBM Cloud. Select the <strong>Machine Learning</strong> service, click on the <strong>Service credentials</strong> (a), then click on the <strong>drop down</strong> button, then copy the selected credentials (b).</p>
+<p><img src="Images/wml.png" alt="wml.png"></p>
 </li>
-<li><p>Under Define storage, add a new IBM Cloud Object Storage instance by clicking on Add under Select storage service.</p>
+<li><p>Run the cell and should show the following results:</p>
+<p><img src="Images/wml_deployed.png" alt="wml_deployed.png"></p>
 </li>
-<li>In the new window that gets opened, select Lite as the Plan and click Create.</li>
-<li>Enter the Service name or keep the default value.</li>
-<li>Click on <strong>Confirm</strong>.</li>
-<li>Click on <strong>Refresh</strong> to see the newly created service instance and get it selected.</li>
-<li>You can select to Restrict who can be a collaborator under Choose project options if you wish to do so at this stage.</li>
-<li>Click on <strong>Create</strong>.</li>
-</ul>
-<h2 id="5-create-a-new-project">5. Create a new project</h2>
-<p>Now you should be taken to a page showing an Overview of the project you just created. You will practice all exercises in the workshop within this project.</p>
-<p><img src="Images/7.png" alt="Create a new project"></p>
+<li><p>The above steps will create the Model and will be added to the Assets.</p>
+<p><img src="Images/models.png" alt="models.png"></p>
+</li>
+<li><p>Click on the Credit Card Approval Model, then on the Deployments tab. You will see that the model has been successfully deployed as a web Service. Then click on (c) to proceed to the deployment.</p>
+<p><img src="Images/deployment.png" alt="deployment.png"></p>
+</li>
+<li><p>Or Click on the <strong>Deployment of Credit Card Approval Model</strong>.  Click on the Implementation tab and select the appropriate Code Snippets for the desired language (cURL, Java, Javascript, Python, Scala).</p>
+<p><img src="Images/implementation.png" alt="implementation.png"></p>
+</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>In this exercise, you experienced uploading a Notebook and data set in order to analyze credit card application data. You then published and deployed it as a web service.</p>
 
                                 
                                 </section>
@@ -478,14 +474,10 @@
 
             
                 
-                <a href="../Solution-Starter-Kit-Communication-2020-ASEAN/starter-kit/node-red/Node-RED-chatbot.html" class="navigation navigation-prev " aria-label="Previous page: b) Create a voice-enabled COVID-19 chatbot using Node-RED">
+                <a href="AutoAI.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: b) Auto AI">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="Data_Preparation_using_Data_Refinery.html" class="navigation navigation-next " aria-label="Next page: a) Data Preparation using Data Refinery">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -494,7 +486,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Provisioning IBM Watson Studio","level":"3.1","depth":1,"next":{"title":"a) Data Preparation using Data Refinery","level":"3.2","depth":1,"path":"Workshop_Watsion_Studio/Data_Preparation_using_Data_Refinery.md","ref":"Workshop_Watsion_Studio/Data_Preparation_using_Data_Refinery.md","articles":[]},"previous":{"title":"b) Create a voice-enabled COVID-19 chatbot using Node-RED","level":"2.2","depth":1,"path":"Solution-Starter-Kit-Communication-2020-ASEAN/starter-kit/node-red/Node-RED-chatbot.md","ref":"Solution-Starter-Kit-Communication-2020-ASEAN/starter-kit/node-red/Node-RED-chatbot.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Workshop_Watsion_Studio/Introduction.md","mtime":"2020-05-09T03:36:53.522Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-13T10:09:51.510Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Jupyter Notebook - Credit Card Approval Model","level":"3.4","depth":1,"next":{"title":"a) Image Classification Lab","level":"3.5","depth":1,"url":"https://cloud.annotations.ai/workshops/classification/index.html","ref":"https://cloud.annotations.ai/workshops/classification/index.html","articles":[]},"previous":{"title":"b) Auto AI","level":"3.3","depth":1,"path":"Workshop_Watsion_Studio/AutoAI.md","ref":"Workshop_Watsion_Studio/AutoAI.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Workshop_Watsion_Studio/Jupyter_Notebook_Credit_Card_approval_model.md","mtime":"2020-05-13T10:07:31.530Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-13T10:09:51.510Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
