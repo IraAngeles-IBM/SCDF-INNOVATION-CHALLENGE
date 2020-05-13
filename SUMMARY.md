@@ -16,7 +16,7 @@
 * [Provisioning IBM Watson Studio](Workshop_Watsion_Studio/Introduction.md)
 * [a) Data Preparation using Data Refinery](Workshop_Watsion_Studio/Data_Preparation_using_Data_Refinery.md)
 * [b) Auto AI](Workshop_Watsion_Studio/AutoAI.md)
-*    [Jupyter Notebook - Credit Card Approval Model](Workshop_Watsion_Studio/Jupyter_Notebook_Credit_Card_approval_model.md)
+* [&nbsp;&nbsp;&nbsp;Jupyter Notebook - Credit Card Approval Model](Workshop_Watsion_Studio/Jupyter_Notebook_Credit_Card_approval_model.md)
 ## Introduction to Visual Recognition
 
 * [a) Image Classification Lab](https://cloud.annotations.ai/workshops/classification/index.html)
