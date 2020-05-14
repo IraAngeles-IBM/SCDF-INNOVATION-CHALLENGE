@@ -9,4 +9,4 @@ We have prepared 2 tutorials to show participants how to leverage IBM Cloud for 
 
 2. As well as a quick tutorial on using IBM Watson Studio for Data Scientists joining the competition!
 
-Any questions pls reach out to us via slack channel
+Any questions please reach out to us via slack channel
