@@ -17,7 +17,7 @@ In this tutorial, you will:
 
 ## Prerequisite
 
-- Register for an [IBM Cloud](https://ibm.biz/BdqfRf) account, if you do not have an account yet.
+- Register for an [IBM Cloud](https://ibm.biz/BdqfRf) account, if you do not have an account yet. Otherwise, please proceed to IBM Cloud [login](ibm.biz/cloud-login-aseandeg)
 - Download the code from this GitHub [repository](https://github.com/IraAngeles-IBM/Solution-Starter-Kit-Communication-2020-ASEAN)
 
 ## Estimated time
