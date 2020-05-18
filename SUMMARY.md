@@ -32,6 +32,9 @@
 * [4. Cloud Foundry on IBM Cloud](https://developer.ibm.com/technologies/paas/)
 * [5. Earn Digital Badges](https://cognitiveclass.ai)
 * [6. IBM Code Pattern Repository](https://developer.ibm.com/patterns/)
+* [7. Introduction to Watson Assistant](https://developer.ibm.com/technologies/artificial-intelligence/articles/introduction-watson-assistant )
+* [8. Introduction to Watson Discovery](https://developer.ibm.com/articles/introduction-watson-discovery/)
+* [9. Get started with Node-RED](https://developer.ibm.com/gettingstarted/node-red/)
 
 ## IBM Developer - ASEAN
 
