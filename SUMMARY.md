@@ -2,7 +2,9 @@
 
 ## SCDF INNOVATION CHALLENGE WITH IBM CALL FOR CODE
 
-* [Welcome](README.md)
+* [Welcome to SCDF Innovation Challenge](README.md)
+* [IBM Cloud Sign-up](https://ibmcloud.gitbook.io/signup/)
+* [IBM Cloud Login](https://ibm.biz/cloud-login-aseandeg)
 
 ## Introduction to AI (Chatbot)
 
