@@ -490,14 +490,14 @@
 </li>
 <li><p>Data</p>
 <ul>
-<li>Download sample data <strong>insurance_claims.csv</strong> for this lab [here] or if you have the
+<li>Download sample data <strong>insurance_claims.csv</strong> for this lab <a href="https://github.com/zacaintmyname/CFCImages/tree/master/WatsonStudioWorkshop/3-%20Insurance%20Fraud%20Detection%20using%20AutoAI" target="_blank">here</a> or if you have the
 WatsonStudioWorkshop.zip file provided by the instructor, the data will be reside in <strong>WatsonStudioWorkshop/03-Insurance Fraud Detection using AutoAI</strong>.</li>
 </ul>
 </li>
 <li><p>Watson Machine Learning Service</p>
 <ul>
 <li>You should have a Watson Machine Learning service provisioned on IBM Cloud and assoicated with the
-current project. If you don&#x2019;t have one, read how to add a new WML service in the Lab 2 <a href="https://github.com/zacaintmyname/CFCImages/tree/master/WatsonStudioWorkshop/3-%20Insurance%20Fraud%20Detection%20using%20AutoAI" target="_blank">here</a>.</li>
+current project. If you don&#x2019;t have one, read how to add a new WML service in the Lab 2 <a href="https://dataplatform.cloud.ibm.com/docs/content/DO/WML_Deployment/WMLServiceInstance.html" target="_blank">here</a>.</li>
 </ul>
 </li>
 </ol>
@@ -590,12 +590,11 @@ current project. If you don&#x2019;t have one, read how to add a new WML service
 <p>Predict with distinct fields
 <img src="Images/53.png" alt="Predict with distinct fields"></p>
 <p>Example JSON format</p>
-<blockquote>
-<p>{&quot;input_data&quot;:[{
-  &quot;fields&quot;:[&quot;months_as_customer&quot;,&quot;age&quot;,&quot;incident_severity&quot;,&quot;insured_hobbies&quot;,&quot;police_report_available&quot;,&quot;capital-loss&quot;,&quot;vehicle_claim&quot;,&quot;auto_year&quot;,&quot;policy_annual_premium&quot;,&quot;authorities_contacted&quot;],
-  &quot;values&quot;:[[328,48,&quot;Major Damage&quot;,&quot;sleeping&quot;,&quot;YES&quot;,0,52080,2004,1406.91,&quot;Police&quot;]]
-  }]}</p>
-</blockquote>
+<pre><code class="lang-Javascript">{<span class="hljs-string">&quot;input_data&quot;</span>:[{
+  <span class="hljs-string">&quot;fields&quot;</span>:[<span class="hljs-string">&quot;months_as_customer&quot;</span>,<span class="hljs-string">&quot;age&quot;</span>,<span class="hljs-string">&quot;incident_severity&quot;</span>,<span class="hljs-string">&quot;insured_hobbies&quot;</span>,<span class="hljs-string">&quot;police_report_available&quot;</span>,<span class="hljs-string">&quot;capital-loss&quot;</span>,<span class="hljs-string">&quot;vehicle_claim&quot;</span>,<span class="hljs-string">&quot;auto_year&quot;</span>,<span class="hljs-string">&quot;policy_annual_premium&quot;</span>,<span class="hljs-string">&quot;authorities_contacted&quot;</span>],
+  <span class="hljs-string">&quot;values&quot;</span>:[[<span class="hljs-number">328</span>,<span class="hljs-number">48</span>,<span class="hljs-string">&quot;Major Damage&quot;</span>,<span class="hljs-string">&quot;sleeping&quot;</span>,<span class="hljs-string">&quot;YES&quot;</span>,<span class="hljs-number">0</span>,<span class="hljs-number">52080</span>,<span class="hljs-number">2004</span>,<span class="hljs-number">1406.91</span>,<span class="hljs-string">&quot;Police&quot;</span>]]
+  }]}
+</code></pre>
 <p><strong>In this exercise, you have created a fraud detection model using AutoAI. Go ahead and give it a try on different datasets as per your requirement and realize the ease of creating and deploying models quickly using AutoAI.</strong></p>
 
                                 
@@ -640,7 +639,7 @@ current project. If you don&#x2019;t have one, read how to add a new WML service
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"b) Auto AI","level":"3.3","depth":1,"next":{"title":"   Jupyter Notebook - Credit Card Approval Model","level":"3.4","depth":1,"path":"Workshop_Watsion_Studio/Jupyter_Notebook_Credit_Card_approval_model.md","ref":"Workshop_Watsion_Studio/Jupyter_Notebook_Credit_Card_approval_model.md","articles":[]},"previous":{"title":"a) Data Preparation using Data Refinery","level":"3.2","depth":1,"path":"Workshop_Watsion_Studio/Data_Preparation_using_Data_Refinery.md","ref":"Workshop_Watsion_Studio/Data_Preparation_using_Data_Refinery.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Workshop_Watsion_Studio/AutoAI.md","mtime":"2020-05-09T04:18:12.977Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-18T04:25:17.681Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"b) Auto AI","level":"3.3","depth":1,"next":{"title":"   Jupyter Notebook - Credit Card Approval Model","level":"3.4","depth":1,"path":"Workshop_Watsion_Studio/Jupyter_Notebook_Credit_Card_approval_model.md","ref":"Workshop_Watsion_Studio/Jupyter_Notebook_Credit_Card_approval_model.md","articles":[]},"previous":{"title":"a) Data Preparation using Data Refinery","level":"3.2","depth":1,"path":"Workshop_Watsion_Studio/Data_Preparation_using_Data_Refinery.md","ref":"Workshop_Watsion_Studio/Data_Preparation_using_Data_Refinery.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Workshop_Watsion_Studio/AutoAI.md","mtime":"2020-05-20T09:21:48.576Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-20T09:21:53.293Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

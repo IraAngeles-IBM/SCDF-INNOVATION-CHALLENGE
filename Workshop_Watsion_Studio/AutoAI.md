@@ -19,12 +19,12 @@ In this lab, we will use AutoAI to build a model to predict fraud.
     * You should have a working project (We named it Watson Studio Workshop as an example) created in Watson Studio. If you don’t have one, read how to create an new project from the introduction page.
 
 2. Data
-    * Download sample data **insurance_claims.csv** for this lab [here] or if you have the
+    * Download sample data **insurance_claims.csv** for this lab [here](https://github.com/zacaintmyname/CFCImages/tree/master/WatsonStudioWorkshop/3-%20Insurance%20Fraud%20Detection%20using%20AutoAI) or if you have the
 WatsonStudioWorkshop.zip file provided by the instructor, the data will be reside in **WatsonStudioWorkshop/03-Insurance Fraud Detection using AutoAI**.
 
 3. Watson Machine Learning Service
     * You should have a Watson Machine Learning service provisioned on IBM Cloud and assoicated with the
-current project. If you don’t have one, read how to add a new WML service in the Lab 2 [here](https://github.com/zacaintmyname/CFCImages/tree/master/WatsonStudioWorkshop/3-%20Insurance%20Fraud%20Detection%20using%20AutoAI).
+current project. If you don’t have one, read how to add a new WML service in the Lab 2 [here](https://dataplatform.cloud.ibm.com/docs/content/DO/WML_Deployment/WMLServiceInstance.html).
 
 Now you should be ready to start the lab!
 
@@ -123,10 +123,13 @@ Predict with distinct fields
 ![Predict with distinct fields](Images/53.png)
 
 Example JSON format
-> {"input_data":[{
+
+```Javascript
+{"input_data":[{
   "fields":["months_as_customer","age","incident_severity","insured_hobbies","police_report_available","capital-loss","vehicle_claim","auto_year","policy_annual_premium","authorities_contacted"],
   "values":[[328,48,"Major Damage","sleeping","YES",0,52080,2004,1406.91,"Police"]]
   }]}
+```
 
 **In this exercise, you have created a fraud detection model using AutoAI. Go ahead and give it a try on different datasets as per your requirement and realize the ease of creating and deploying models quickly using AutoAI.**
 
