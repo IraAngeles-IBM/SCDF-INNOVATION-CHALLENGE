@@ -117,10 +117,23 @@ Before the flow will execute successfully, you must configure the Watson Assista
 
 #### Create a Watson Assistant instance
 
-1. If you haven't already, create a [Watson Assistant service instance](https://cloud.ibm.com/catalog/services/watson-assistant).
+1. If you have created a [Watson Assistant service instance](https://cloud.ibm.com/catalog/services/watson-assistant).
+
    ![IBM Cloud Catalog Watson Assistant](../../starter-kit/assistant/WA-Photo1.png)
 
-1. Follow these [instructions](../../ASSISTANT.md) to provision a Watson Assistant chatbot for COVID-19
+   * a) Copy the Watson Assistant instance API key (a) and URL (b)
+
+      ![URL and API key](./images/watson_assistant_url.png)
+
+   * b) Go to View API Details 
+
+      ![Skill details](./images/skill_id.png)
+
+   * c) Copy the Skill ID 
+
+      ![Skill details](./images/skill_id_and_api.png)
+
+2. If you haven't created [Watson Assistant service instance](https://cloud.ibm.com/catalog/services/watson-assistant), follow these [instructions](../../ASSISTANT.md) to provision a Watson Assistant chatbot for COVID-19
 
 #### Create a Watson Speech to Text service instance
 

@@ -565,10 +565,21 @@
 <p>Before the flow will execute successfully, you must configure the Watson Assistant and Watson Speech nodes with new service instances and API Keys.</p>
 <h4 id="create-a-watson-assistant-instance">Create a Watson Assistant instance</h4>
 <ol>
-<li><p>If you haven&apos;t already, create a <a href="https://cloud.ibm.com/catalog/services/watson-assistant" target="_blank">Watson Assistant service instance</a>.
-<img src="../assistant/WA-Photo1.png" alt="IBM Cloud Catalog Watson Assistant"></p>
+<li><p>If you have created a <a href="https://cloud.ibm.com/catalog/services/watson-assistant" target="_blank">Watson Assistant service instance</a>.</p>
+<p><img src="../assistant/WA-Photo1.png" alt="IBM Cloud Catalog Watson Assistant"></p>
+<ul>
+<li><p>a) Copy the Watson Assistant instance API key (a) and URL (b)</p>
+<p> <img src="images/watson_assistant_url.png" alt="URL and API key"></p>
 </li>
-<li><p>Follow these <a href="../../ASSISTANT.html">instructions</a> to provision a Watson Assistant chatbot for COVID-19</p>
+<li><p>b) Go to View API Details </p>
+<p> <img src="images/skill_id.png" alt="Skill details"></p>
+</li>
+<li><p>c) Copy the Skill ID </p>
+<p> <img src="images/skill_id_and_api.png" alt="Skill details"></p>
+</li>
+</ul>
+</li>
+<li><p>If you haven&apos;t created <a href="https://cloud.ibm.com/catalog/services/watson-assistant" target="_blank">Watson Assistant service instance</a>, follow these <a href="../../ASSISTANT.html">instructions</a> to provision a Watson Assistant chatbot for COVID-19</p>
 </li>
 </ol>
 <h4 id="create-a-watson-speech-to-text-service-instance">Create a Watson Speech to Text service instance</h4>
@@ -708,7 +719,7 @@ msg.payload = totalConfirmedCase;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"b) Create a voice-enabled COVID-19 chatbot using Node-RED","level":"2.2","depth":1,"next":{"title":"Provisioning IBM Watson Studio","level":"3.1","depth":1,"path":"Workshop_Watsion_Studio/Introduction.md","ref":"Workshop_Watsion_Studio/Introduction.md","articles":[]},"previous":{"title":"a) Create a crisis communication chatbot and connect it to news and data sources","level":"2.1","depth":1,"path":"Solution-Starter-Kit-Communication-2020-ASEAN/ASSISTANT.md","ref":"Solution-Starter-Kit-Communication-2020-ASEAN/ASSISTANT.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Solution-Starter-Kit-Communication-2020-ASEAN/starter-kit/node-red/Node-RED-chatbot.md","mtime":"2020-05-18T03:42:09.408Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-21T07:07:30.260Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"b) Create a voice-enabled COVID-19 chatbot using Node-RED","level":"2.2","depth":1,"next":{"title":"Provisioning IBM Watson Studio","level":"3.1","depth":1,"path":"Workshop_Watsion_Studio/Introduction.md","ref":"Workshop_Watsion_Studio/Introduction.md","articles":[]},"previous":{"title":"a) Create a crisis communication chatbot and connect it to news and data sources","level":"2.1","depth":1,"path":"Solution-Starter-Kit-Communication-2020-ASEAN/ASSISTANT.md","ref":"Solution-Starter-Kit-Communication-2020-ASEAN/ASSISTANT.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Solution-Starter-Kit-Communication-2020-ASEAN/starter-kit/node-red/Node-RED-chatbot.md","mtime":"2020-05-21T08:08:45.086Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-21T08:08:52.101Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
