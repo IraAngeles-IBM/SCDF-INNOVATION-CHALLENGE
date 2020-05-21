@@ -117,7 +117,7 @@ Before the flow will execute successfully, you must configure the Watson Assista
 
 #### Create a Watson Assistant instance
 
-1. If you have created a [Watson Assistant service instance](https://cloud.ibm.com/catalog/services/watson-assistant).
+1. If you have created a [Watson Assistant service instance](https://cloud.ibm.com/catalog/services/watson-assistant). Kindly follow a), b), and c).
 
    ![IBM Cloud Catalog Watson Assistant](../../starter-kit/assistant/WA-Photo1.png)
 
