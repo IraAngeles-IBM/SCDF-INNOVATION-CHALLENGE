@@ -24,7 +24,7 @@ When refining your data, the **Data** tab is where you can see a simple of how y
 
 ## 2.3 Add Datasets to the Project
 
-1. Go to the newly created **Watson Stutido Workshop** project and add the datasets to the project:
+1. Go to the newly created **Watson Studio Workshop** project and add the datasets to the project:
 
 - Click on **Assets** on the panel found under the name of your project at the top of the page.
 - At the top right of the page, click on the icon that has zeros and ones (two of each).
