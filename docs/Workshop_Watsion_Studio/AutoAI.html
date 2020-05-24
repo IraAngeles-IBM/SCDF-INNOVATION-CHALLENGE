@@ -496,14 +496,13 @@ WatsonStudioWorkshop.zip file provided by the instructor, the data will be resid
 </li>
 <li><p>Watson Machine Learning Service</p>
 <ul>
-<li>You should have a Watson Machine Learning service provisioned on IBM Cloud and assoicated with the
-current project. If you don&#x2019;t have one, read how to add a new WML service in the Lab 2 <a href="https://dataplatform.cloud.ibm.com/docs/content/DO/WML_Deployment/WMLServiceInstance.html" target="_blank">here</a>.</li>
+<li>You should have a Watson Machine Learning service provisioned on IBM Cloud and assoicated with the current project. If you don&#x2019;t have one, read how to add a new WML service in the Lab 2 <a href="https://dataplatform.cloud.ibm.com/docs/content/DO/WML_Deployment/WMLServiceInstance.html" target="_blank">here</a>.</li>
 </ul>
 </li>
 </ol>
 <p>Now you should be ready to start the lab!</p>
 <h2 id="33-add-asset-as-auto-ai">3.3 Add Asset as Auto AI</h2>
-<ol>
+<ul>
 <li><p>Click on <strong>Add to project</strong> and select AutoAI experiment.
 <img src="Images/40.png" alt="Add to project"></p>
 <blockquote>
@@ -512,76 +511,76 @@ current project. If you don&#x2019;t have one, read how to add a new WML service
 </li>
 <li><p>Give a name to the experiment. If you have a Watson Machine Learning Service Instance associated with this project, it will automatically show up. The <strong>Create</strong> button at the bottom right gets highlighted, go ahead and hit Create.</p>
 </li>
-</ol>
+</ul>
 <p>Create Experiment
 <img src="Images/41.png" alt="Create Experiment"></p>
 <p>Note: If you dont have one, click on <strong>Associate a Machine Learning service instance</strong> to this project and select the Machine Learning service instance and hit reload. If you do not have Machine Learning service instance, then follow the steps on your screen to get one.</p>
 <h2 id="34-import-data">3.4 Import data</h2>
-<ol>
+<ul>
 <li>We need to import the csv file into the experiment. Note that, only csv file format is supported in AutoAI. Click on <strong>Browse</strong> or <strong>Select from project</strong> to choose the <em>insurance_claims.csv</em> file to import.</li>
-</ol>
+</ul>
 <p>Adding CSV file
 <img src="Images/42.png" alt="Adding CSV file"></p>
 <h2 id="35-configure-autoai-experiment">3.5 Configure AutoAI experiment</h2>
-<ol>
+<ul>
 <li>We have to select the target variable, in this case it is <strong>fraud_reported</strong>. Notice that <strong>Prediction Type</strong> and <strong>Optimized Metric</strong> get highlighted which tells us that we are working on <strong>Binary Classification</strong> use case and the evaluation metric is <strong>ROC</strong> (Receiver Operating Characteristics) &amp; <strong>AUC</strong> (Area Under The Curve) which is used for classification usecases.</li>
-</ol>
+</ul>
 <p>Configure Experiment
 <img src="Images/43.png" alt="Configure Experiment"></p>
-<ol>
+<ul>
 <li>We can click on experiment settings for more customized configurations such as the training vs. holdout data split ratio, input columns etc. Save settings. Then click <strong>Run experiment</strong>.</li>
-</ol>
+</ul>
 <p>Experiment Setting
 <img src="Images/44.png" alt="Experiment Setting"></p>
 <h2 id="36-analyze-results">3.6 Analyze results</h2>
-<ol>
+<ul>
 <li>The AutoAI experiment will generate four pipelines. which will be ranked based on the evaluation metrics. AutoAI selects the appropriate machine learning algorithm which is best suited for the dataset.<blockquote>
 <p> The duration of experiment depends completly on the size of the dataset. </p>
 </blockquote>
 </li>
-</ol>
+</ul>
 <p>Each pipeline is run with different parameters, pipeline 3 is run on a sequence of HPO (hyper parameters optimization) &amp; FE (feature engineering) where as pipeline 4 includes HPO (hyper parameters optimization), FE (feature engineering) and a combination of both. All these are done on the fly! Isn&#x2019;t it amazing that we just have to sit and watch while AutoAI takes care of things for us and generates awesome machine learning models!! There&#x2019;s very minimal intervention required to get things going and in no time we have the generated pipelines to choose from.</p>
 <p>Relationship Map
 <img src="Images/45.png" alt="Relationship Map"></p>
-<ol>
+<ul>
 <li>Click on <strong>Pipeline 4</strong> (which is ranked 1) to check model details.</li>
-</ol>
+</ul>
 <p>Model Evaluation
 <img src="Images/46.png" alt="Model Evaluation"></p>
 <p>The model evaluation tab shows the performance of the model on the hold out sample and cross validation score. We can observe that our model has done very well by scoring &gt; 95% on Recall, average Precision scores &amp; Area under the curve scores. These scores also mean that our model is able to remember and identify fraudulent claims with great precision.</p>
-<ol>
+<ul>
 <li>Click on the <strong>Model Information</strong> tab, we can observe that XGB Classifier has been used with total features of 22 where as the original dataset had 10 variables which means 12 new features have been created by AutoAI which is one of the reasons for high accuracy of the model. Check feature transformations to understand the transformation of original features to new features. <strong>Feature engineering</strong> is one of the important phases in the model building process which has a direct impact on the overall accuracy of the model.</li>
-</ol>
+</ul>
 <p>Model Information
 <img src="Images/47.png" alt="Model Information"></p>
-<ol>
+<ul>
 <li>Click on <strong>feature importance</strong> to identify the significant features influencing the outcome. Any variable which starts with Newfeature is a variable generated on the fly by the model as part of feature engineering.</li>
-</ol>
+</ul>
 <p>Feature Importance
 <img src="Images/48.png" alt="Feature Importance"></p>
 <h2 id="37-save-model">3.7 Save Model</h2>
-<ol>
+<ul>
 <li>After all the analysis of model performance, it&#x2019;s time to select the model for deployment. We will go ahead and select pipeline 4 which is Rank 1 and click on <strong>Save as model</strong>. We can select any of the pipelines to be saved which has highest Accuracy or any other evaluation metrics.</li>
-</ol>
+</ul>
 <p>Save Model
 <img src="Images/49.png" alt="Save Model"></p>
 <blockquote>
 <p>Note: You can also save the model as a Notebook, which will generate all the python code of the model.</p>
 </blockquote>
-<ol>
+<ul>
 <li>The saved model can be found under <strong>Models</strong> under the project in Watson Studio. Click on three dots on the right side below <strong>Actions</strong> and hit <strong>Deploy</strong>.</li>
-</ol>
+</ul>
 <p>Deploy Model
 <img src="Images/50.png" alt="Deploy Model"></p>
 <h2 id="38-deploy-model">3.8 Deploy Model</h2>
-<ol>
+<ul>
 <li>Click on <strong>Add Deployment</strong> on the right side above <strong>Actions</strong>.</li>
-</ol>
+</ul>
 <p>Add Deployment
 <img src="Images/51.png" alt="Add Deployment"></p>
-<ol>
+<ul>
 <li>Define the deployment by giving a name and hit <strong>Save</strong>. Note that, the model will get deployed as web service as a ReST API. The deployment should be ready soon. Wait until the deployment status is <em>DEPLOY_SUCCESS</em>. Fresh the page if needed.</li>
-</ol>
+</ul>
 <p>Define Deployment Details
 <img src="Images/52.png" alt="Define Deployment Details"></p>
 <h2 id="39-test-deployment-endpoint">3.9 Test Deployment Endpoint</h2>
@@ -639,7 +638,7 @@ current project. If you don&#x2019;t have one, read how to add a new WML service
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"b) Auto AI","level":"3.3","depth":1,"next":{"title":"   Jupyter Notebook - Credit Card Approval Model","level":"3.4","depth":1,"path":"Workshop_Watsion_Studio/Jupyter_Notebook_Credit_Card_approval_model.md","ref":"Workshop_Watsion_Studio/Jupyter_Notebook_Credit_Card_approval_model.md","articles":[]},"previous":{"title":"a) Data Preparation using Data Refinery","level":"3.2","depth":1,"path":"Workshop_Watsion_Studio/Data_Preparation_using_Data_Refinery.md","ref":"Workshop_Watsion_Studio/Data_Preparation_using_Data_Refinery.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Workshop_Watsion_Studio/AutoAI.md","mtime":"2020-05-23T12:34:11.235Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-23T14:18:12.335Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"b) Auto AI","level":"3.3","depth":1,"next":{"title":"   Jupyter Notebook - Credit Card Approval Model","level":"3.4","depth":1,"path":"Workshop_Watsion_Studio/Jupyter_Notebook_Credit_Card_approval_model.md","ref":"Workshop_Watsion_Studio/Jupyter_Notebook_Credit_Card_approval_model.md","articles":[]},"previous":{"title":"a) Data Preparation using Data Refinery","level":"3.2","depth":1,"path":"Workshop_Watsion_Studio/Data_Preparation_using_Data_Refinery.md","ref":"Workshop_Watsion_Studio/Data_Preparation_using_Data_Refinery.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Workshop_Watsion_Studio/AutoAI.md","mtime":"2020-05-24T05:07:15.343Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-24T05:07:29.424Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
