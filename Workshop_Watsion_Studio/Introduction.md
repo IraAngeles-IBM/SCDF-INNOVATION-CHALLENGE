@@ -29,7 +29,7 @@ To begin, please [clone the relevant data files](https://github.com/zacaintmynam
 - Click on **Watson** from the menu on the left, which you can find under Platform services.
 - Select **Watson Studio**.
 
-## 2. Locate **Watson Studio** service in the Catelog
+## 2. Locate **Watson Studio** service in the Catalog
 ![Locate Watson Studio service in the Catelog](Images/2.png)
 
 - Enter the **Service name** or keep the default value and add relevant **tags** (e.g. CallforCode) to organise your services. 
