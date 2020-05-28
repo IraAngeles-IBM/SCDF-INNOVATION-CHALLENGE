@@ -99,7 +99,7 @@ Convert data type
 
 ## 3.7 Data Harmonization: EDUCATION
 
-- Standardize the *AGE* field:
+- Standardize the *EDUCATION* field:
 
   - Click on the **Profile** tab and take a closer look at the column *EDUCATION*. You notice there are some additional values with extra spaces at the beginning and possibly the end of the string.
 
