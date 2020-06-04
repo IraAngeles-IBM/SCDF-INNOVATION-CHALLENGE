@@ -48,6 +48,7 @@ In this tutorial, you will be using Machine Learning and Jupyter Notebook using 
     ```
     applicants = pd.read_csv(body,header=None,na_values=['NaN)'])
     ```
+    Now once you see the output as shown below, it means you have loaded the dataset successfully.
 
     ![replace_code.png](Images/replace_code.png)
 
