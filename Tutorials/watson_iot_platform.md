@@ -1,4 +1,4 @@
-# Turn your smartphone into an IoT device
+# Setting up your first IoT
 
 #### Create IBM Cloud apps to process, visualize, and store sensor data that is sent to and from your smartphone
 
