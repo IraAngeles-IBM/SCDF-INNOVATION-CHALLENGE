@@ -21,7 +21,7 @@
 
     ![api key](images/api_key.png)
 
-    * Select the **IBM IoT App Out** node, in the Authentication, select API Key, then in the API Key select the previously created API Key in **IBM IoT App In** node. Then key in the **Device Id** (b).
+    * Select the **IBM IoT App Out** node, in the Authentication, select API Key, then in the API Key select the previously created API Key in **IBM IoT App In** node. Then key in the **Device Id** (b). Click update and Deploy to save the settings.
 
     ![iot out node](images/iotf_out.png)
 
