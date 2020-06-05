@@ -28,7 +28,7 @@
 
 ## For more Advanced Users
 
-* [1. Setting up your first IoT](https://developer.ibm.com/technologies/iot/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/)
+* [1. Setting up your first IoT](Tutorials/watson_iot_platform.md)
 * [2. Creating an App with CloudantDB](https://developer.ibm.com/tutorials/provision-a-couchdb-instance-using-cloudant-cfc-starter-kit-2/)
 * [3. Model Asset eXchange (MAX)](https://developer.ibm.com/exchanges/models/)
 * [4. Cloud Foundry on IBM Cloud](https://developer.ibm.com/technologies/paas/)
