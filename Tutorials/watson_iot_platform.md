@@ -1,6 +1,6 @@
 # Turn your smartphone into an IoT device
 
-### Create IBM Cloud apps to process, visualize, and store sensor data that is sent to and from your smartphone
+#### Create IBM Cloud apps to process, visualize, and store sensor data that is sent to and from your smartphone
 
 * Proceed to this tutorial, [Turn your smartphone into an IoT device](https://developer.ibm.com/technologies/iot/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/)
 * If you encounter any issues in Step 5. Please continue with the following to generate the API key:
@@ -25,4 +25,3 @@
 
     ![iot out node](images/iotf_out.png)
 
-    
