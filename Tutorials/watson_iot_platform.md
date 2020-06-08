@@ -3,6 +3,9 @@
 #### Create IBM Cloud apps to process, visualize, and store sensor data that is sent to and from your smartphone
 
 * Proceed to this tutorial, [Turn your smartphone into an IoT device](https://developer.ibm.com/technologies/iot/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/)
+
+* For latest release of the IoT Starter Android App, download from this Github [repository](https://github.com/IraAngeles-IBM/iot-starter-for-android/releases)
+
 * If you encounter any issues in Step 5. Please continue with the following to generate the API key:
 
     * In **IBM Watson IoT Platform** dashboard, select Apps (a), then **Generate API Key** (b). Kindly save the generated API key and Authentication token.  Once lost you need to generate again.
